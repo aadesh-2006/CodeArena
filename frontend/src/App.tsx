@@ -7,6 +7,8 @@ import { ProtectedRoute } from './components/ProtectedRoute';
 import { LoginPage } from './pages/LoginPage';
 import { RegisterPage } from './pages/RegisterPage';
 import { ProfilePage } from './pages/ProfilePage';
+import { ProblemCataloguePage } from './pages/ProblemCataloguePage';
+import { ProblemDetailPage } from './pages/ProblemDetailPage';
 import { AuthProvider } from './context/AuthContext';
 import { HealthStatus, ApiResponse } from './types';
 import { BookOpen, Layers, Terminal, Cpu, Database } from 'lucide-react';
@@ -157,6 +159,8 @@ export const AppContent: React.FC = () => {
               />
             }
           />
+          <Route path="/problems" element={<ProblemCataloguePage />} />
+          <Route path="/problems/:slug" element={<ProblemDetailPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
           <Route

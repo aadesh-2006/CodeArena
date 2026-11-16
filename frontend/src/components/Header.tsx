@@ -13,7 +13,7 @@ export const Header: React.FC<HeaderProps> = ({ activeTab = 'problems', onNaviga
   const { user, isAuthenticated, logout } = useAuth();
 
   const navItems = [
-    { id: 'problems', label: 'Problems', path: '/' },
+    { id: 'problems', label: 'Problems', path: '/problems' },
     { id: 'explore', label: 'Explore', path: '/' },
     { id: 'submissions', label: 'Submissions', path: '/' },
     { id: 'dashboard', label: 'Dashboard', path: '/' },
